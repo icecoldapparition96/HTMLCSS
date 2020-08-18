@@ -36,18 +36,23 @@ set that */
     padding: 13px 20px;
     border:none;
     cursor: pointer;
+    border-radius: 50px;
 }
 .btn-light{
     background: #f4f4f4;
     color: #333;
 }
 .bg-primary{
-    background: #f4f4f4;
-    color: #f7c08a;  
+    color: #333333;
+    background: #f7c08a;  
 }
 .bg-dark{
     background: #333;
     color: #fff;
+}
+
+.clr{
+    clear: both;
 }
 
 h1,h2,h3{
@@ -151,4 +156,29 @@ p{
 
 #home-info .info-content p{
     padding-bottom: 30px;
+}
+
+/* features */
+.box{
+    float:left;
+    width: 33.3%;
+    padding:50px;
+    text-align: center;
+}
+.box i{
+    margin-bottom: 10px;
+}
+
+.bg-light{
+    background: lightcyan;
+}
+
+
+/*Footer*/
+
+.main-footer{
+text-align: center;
+background: #444444;
+color: #fff;
+padding: 20px;
 }
