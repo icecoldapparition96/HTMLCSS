@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel website</title>
+    <meta name="description" content="Welcome to this Delhi Hotel">
+    <meta name="keywords" content="hotel, delhi hotel, best delhi hotel">
+    <!--
+        adding the style sheet
+    -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- nav bar placement that top bar for scrolling-->
+        <nav id="navbar">
+            <h1 class="logo"><a href="index.html">Hotel La Carte</a></h1>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <!-- Now the class will be shited to about-->
+                    <a class="current" href="about.html">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        Login/SignUp
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- container 1 begins -->
+    <section id='about-info'>
+        <div class="container">
+            <!-- The cointer is divided into two parts -->
+            <div class="info-left">
+                <h1 class="l-heading">
+                    <span class="text-primary">About</span> Hotel BT
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odio facilis mollitia earum sint,
+                    alias vel distinctio sequi non placeat quis a error sit ullam ratione voluptatum quam laborum
+                    beatae.</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis obcaecati cum rem? Expedita
+                    natus sed magnam nesciunt maiores facilis cupiditate!
+                </p>
+            </div>
+            <div class="info-right">
+                <!--
+                    image class
+                -->
+                <img src="./img/photo-2.jpg" alt="hotel">
+            </div>
+        </div>
+    </section>
+    <div class="clr"></div>
+    <!--Testmonials-->
+    <section id="testimonials" class="py-3">
+        <div class="container">
+            <h2 class="l-heading">What Our Guests Say</h2>
+            <div class="testimonial bg-primary">
+                <img src="./img/person-1.jpg" alt="Dani">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aut corporis beatae. Vitae quasi
+                    laboriosam optio nemo dolores totam incidunt, facilis dolorem cumque ratione laborum numquam amet
+                    quisquam culpa provident facere neque nam tempore pariatur praesentium minima accusamus nostrum eos.
+                </p>
+            </div>
+            <div class="testimonial bg-primary">
+                <img src="./img/person-2.jpg" alt="Chalice">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aut corporis beatae. Vitae quasi
+                    laboriosam optio nemo dolores totam incidunt, facilis dolorem cumque ratione laborum numquam amet
+                    quisquam culpa provident facere neque nam tempore pariatur praesentium minima accusamus nostrum eos.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Using it here because i don't want the image and its text to bleed into the footer-->
+    <div class="clr"></div>
+    <footer class="main-footer">
+        <p>Hotel BT &copy; 2019, All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

@@ -50,11 +50,21 @@ set that */
     background: #333;
     color: #fff;
 }
-
+/* Generic classes */
+/* Float clear classes */
 .clr{
     clear: both;
 }
 
+.l-heading{
+    font-size: 40px;
+}
+
+/* padding classes */
+.py-1 { padding: 10px 0; }
+.py-2 { padding: 20px 0; }
+.py-3 { padding: 30px 0; }
+/* ++++++++++++++++++++ */
 h1,h2,h3{
     /* because we removed all the padding */
     padding-bottom:20px;
@@ -143,6 +153,7 @@ p{
     width: 50%;
     background: url('../img/photo-1.jpg') no-repeat;
     min-height: 100%;
+    border-radius: 50%;
 }
 
 #home-info .info-content{
@@ -170,8 +181,119 @@ p{
 }
 
 .bg-light{
-    background: lightcyan;
+    background: rgb(151, 199, 199);
 }
+
+/* CSS FOR ABOUT PAGE */
+
+/* FLOAT CONTENT TO LEFT
+#about-info .info-left {
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+
+/* FLOAT CONTENT TO RIGHT */
+/*#about-info .info-right{
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+/* image tag */ /*
+#about-info .info-right img{
+    display: block;
+    margin: auto;
+    width: 70%;
+} */
+#about-info .container{
+    margin: 20px;
+}
+#about-info .info-right {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+  }
+  
+  #about-info .info-right img {
+    display: block;
+    margin: auto;
+    width: 70%;
+    border-radius: 50%;
+  }
+  
+  #about-info .info-left {
+    float: left;
+    width: 50%;
+    min-height: 100%;
+  }
+
+/*Testimonials */
+#testimonials{
+    margin-top: 20px;
+    padding-top: 100px;
+    height: 600px;
+    /* important for this background */
+    background: url(../img/test-bg.jpg) no-repeat
+    center center/cover;
+}
+/*Target the h2 heading "What guests say about us"*/
+#testimonials h2{
+    color:#f4f4f4;
+    text-align: center;
+    padding-bottom: 40px;
+}
+/* Now we space the testimonials out themselves properly*/
+#testimonials .testimonial{
+    padding: 20px;
+    margin-bottom: 40px;
+    /*to give testimonials a little bit of rounded corner*/
+    border-radius: 10px;
+    /* to have an overlay i.e. seeing the background image*/
+    opacity: 0.9;
+}
+
+/* We need to reduce the size of the images as 
+everyhing is overflowing from the container */
+#testimonials .testimonial img{
+    /*float image to left*/
+    float: left;
+    margin-right: 20px;
+    /*rounds the image*/
+    border-radius: 50%;
+    width: 100px;
+}
+
+/*Contact form*/
+#contact-form{
+    margin: 20px;
+}
+#contact-form .form-group{
+    margin-bottom: 20px;
+}
+/* now shift input box beside label to below*/
+#contact-form label{
+    display: block;
+    /*to move away from external elements*/
+    /* that is why we use margin-bottom*/
+    margin-bottom: 5px;
+}
+#contact-form input, #contact-form textarea{
+    width: 100%;
+    /* the internal element area*/
+    padding: 10px;
+    border: 1px #f4f4f4 solid;
+}
+
+#contact-form textarea{
+    height: 200px;
+}
+#contact-form input:focus, 
+#contact-form textarea:focus{
+    outline: none;
+    border-color: #f7c08a;
+}
+/* if we want to change the behavior of what 
+we want to show */
 
 
 /*Footer*/
